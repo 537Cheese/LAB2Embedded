@@ -12,15 +12,15 @@ int main(void)
     unsigned char AND;
     unsigned char OR;
 
-    int a = 3;
+    int a = 8;
 
     a+=1;
 
     b-=1;
 
-    OR = c||d;
-
     AND = c&&d;
+
+    OR = c||d;
 
     while(1);
 

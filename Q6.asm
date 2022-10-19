@@ -26,17 +26,15 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
  			mov.w #2D97h,R4
  			mov.w #6239h,R5
  			mov.w #2345h,R6
-
 			cmp R4,R6
 			jge rout
  			jmp $
 
 rout:
-			call #function
+			call #func
 			jmp $
 
-function:
-			bis R4,R6
+func:
 			and R5,R4
  			mov.w R6,&203Ch
 
